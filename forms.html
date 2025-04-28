@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Get A Quote</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./forms.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">Get A Quote</div>
+
+        <form action="https://formsubmit.co/bosusolomon2006@gmail.com" method="POST" enctype="multipart/form-data">
+
+            <input type="hidden" name="_next" value="thank-you.html">
+
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" name="Full Name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Property Address</span>
+                    <input type="text" name="Property Address" placeholder="Enter your property's address" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" name="Email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="tel" name="Phone Number" placeholder="Enter your phone number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Type Of Service Needed</span>
+                    <input type="text" name="Service Type" placeholder="What's the type of service" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Preferred Start Date</span>
+                    <input type="text" name="Preferred Start Date" placeholder="When do you want us to start" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Project Details</span>
+                    <input type="text" name="Project Details" placeholder="Give us a rough idea" required>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Upload Project Photos</span>
+                    <div class="image-upload-container">
+                        <div class="custom-file-upload">
+                            <label for="fileInput" class="upload-btn">Choose Photos</label>
+                            <input type="file" id="fileInput" name="Project Photos" multiple accept="image/*" style="display: none;">
+                        </div>
+                        <div id="imagePreviewContainer"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="./forms.js"></script>
+</body>
+</html>
